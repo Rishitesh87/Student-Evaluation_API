@@ -2,7 +2,7 @@ import {
   JsonController, Authorized, CurrentUser, Post, Param,Body, BadRequestError, HttpCode, NotFoundError, Get, Delete, HeaderParam
 } from 'routing-controllers'
 import  Batch  from './entity'
-export const baseUrl='http://localhost:4008'
+// export const baseUrl='http://localhost:4008'
 
 @JsonController()
 export default class BatchController {

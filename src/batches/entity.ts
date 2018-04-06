@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm'
 import { BaseEntity } from 'typeorm/repository/BaseEntity'
-import { IsDateString} from 'class-validator'
+import { IsDate} from 'class-validator'
 import Student from '../students/entity'
 
 
@@ -11,11 +11,11 @@ export default class Batch extends BaseEntity {
   @PrimaryGeneratedColumn()
   id?: number
 
-  @IsDateString()
+  @IsDate()
   @Column('date')
   startDate: Date
 
-  @IsDateString()
+  @IsDate()
   @Column('date')
   endDate: Date
 
